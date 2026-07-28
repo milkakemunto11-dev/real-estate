@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Prime Estates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="about_us.html">About us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page container -->
+  <div class="page-wrap">
+
+    <!-- Glass panel containing the form + info -->
+    <div class="contact-panel" role="region" aria-label="Contact panel">
+
+      <h2>Get in Touch</h2>
+      <p class="lead" style="color:#ddd;margin-top:-10px;margin-bottom:6px;">Looking to buy, sell, rent or invest? Send us a message and one of our agents will reply within 1–2 business days.</p>
+
+      <form class="contact-form" action="#" method="post" autocomplete="on" novalidate>
+        <div>
+          <label for="fname">Full Name</label>
+          <input id="fname" name="fullname" type="text" placeholder="Your full name" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phonenumber" type="text" placeholder="+254 7xx xxx xxx" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label for="interest">I'm Interested In</label>
+          <input id="interest" name="interest" type="text" placeholder="e.g. Buying a 2-bedroom apartment in Kilimani">
+        </div>
+
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell us how we can help…" rows="6" required></textarea>
+        </div>
+
+        <div class="actions">
+          <div class="note">We respect your privacy — your details are never shared.</div>
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <h3 style="margin-top:1.5rem;">How to Reach Us</h3>
+        <p>Email: <a href="mailto:info@primeestates.co.ke">info@primeestates.co.ke</a></p>
+        <p>Phone: <a href="tel:+254719719178">+254 719 719 178</a></p>
+        <p>Office Hours: Mon–Fri, 9:00 — 18:00</p>
+        <p>Office: Westlands, Nairobi, Kenya</p>
+      </div>
+
+    </div> <!-- /.contact-panel -->
+
+  </div> <!-- /.page-wrap -->
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Prime Estates | Designed with HTML &amp; CSS
+  </footer>
+
+</body>
+</html>
