@@ -12,12 +12,12 @@
    (shared across pages)
    =========================== */
 :root{
-  --primary:#ffcc00; /* services page yellow — used site-wide for consistency */
-  --dark:#1a1a1a;
+  --primary:#BF5B2E; /* services page yellow — used site-wide for consistency */
+  --dark:#1F3D2E;
   --light:#fff;
-  --muted:#6b7280;
+  --muted:#6E8B74;
   --max-width:1150px;
-  --card-bg:#0f172a;
+  --card-bg:#173225;
   --card-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
@@ -26,11 +26,11 @@
    (kept exactly as provided)
    =========================== */
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#f8f9fa;color:#222;line-height:1.6}
+body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#FAF3E7;color:#222;line-height:1.6}
 a{color:inherit;text-decoration:none}
 
 /* Navbar */
-.navbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(26,26,26,0.92);padding:1rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px}
+.navbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(31,61,46,0.92);padding:1rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px}
 .nav-menu{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:center;gap:28px;list-style:none}
 .nav-menu a{color:var(--light);font-weight:600;padding:8px 14px;border-radius:8px;position:relative}
 .nav-menu a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:3px;background:var(--primary);border-radius:2px;transition:width .25s}
@@ -46,7 +46,7 @@ a{color:inherit;text-decoration:none}
 .hero h1{font-size:clamp(1.6rem,3vw,2.6rem);margin:0 0 .6rem}
 .hero p{margin:0 0 12px;color:rgba(255,255,255,.95)}
 .btn{display:inline-block;background:var(--primary);color:var(--dark);padding:10px 18px;border-radius:8px;font-weight:600;transition:all .2s}
-.btn:hover{background:#e6b800;transform:translateY(-2px)}
+.btn:hover{background:#9C4820;transform:translateY(-2px)}
 
 h3{ text-align:center; margin:2rem 0 1rem; font-size:2rem; color:#222}
 h3::after{content:'';display:block;height:3px;width:60%;background:var(--primary);margin:8px auto 0;border-radius:2px}
@@ -76,8 +76,8 @@ hr{border:none;height:2px;width:60%;margin:2rem auto;background:linear-gradient(
 .reveal.in-view{opacity:1;transform:none}
 
 /* Lightbox (from Properties page) */
-#lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,18,0.88);z-index:1600}
-#lightbox img{max-width:92%;max-height:86%;border-radius:8px;box-shadow:0 28px 80px rgba(2,6,18,0.9)}
+#lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(18,28,22,0.88);z-index:1600}
+#lightbox img{max-width:92%;max-height:86%;border-radius:8px;box-shadow:0 28px 80px rgba(18,28,22,0.9)}
 #lb-close,#lb-next,#lb-prev{position:fixed;background:rgba(255,255,255,0.06);border:0;padding:10px;border-radius:10px;color:var(--light)}
 #lb-close{right:18px;top:18px} #lb-prev{left:18px;top:50%;transform:translateY(-50%)} #lb-next{right:18px;top:50%;transform:translateY(-50%)}
 
@@ -113,7 +113,7 @@ hr{border:none;height:2px;width:60%;margin:2rem auto;background:linear-gradient(
 html,body{height:100%;margin:0}
 body{
   font-family:'Segoe UI', Tahoma, Arial, sans-serif;
-  background:#f8f9fa;
+  background:#FAF3E7;
   color:#222;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -122,7 +122,7 @@ body{
 a{color:inherit;text-decoration:none}
 
 /* NAV (homepage style) */
-.navbar{position:sticky;top:0;z-index:120;backdrop-filter:blur(12px);background:rgba(26,26,26,0.92);padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px 20px}
+.navbar{position:sticky;top:0;z-index:120;backdrop-filter:blur(12px);background:rgba(31,61,46,0.92);padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px 20px}
 .nav-menu{max-width:var(--max-width);margin:0 auto;display:flex;gap:22px;list-style:none;padding:6px 18px;justify-content:center;align-items:center}
 .nav-menu a{color:var(--light);font-weight:600;padding:8px 14px;border-radius:8px;position:relative}
 .nav-menu a::after{content:'';position:absolute;left:0;bottom:-6px;height:3px;width:0;background:var(--primary);border-radius:3px;transition:width .28s}
@@ -139,7 +139,7 @@ a{color:inherit;text-decoration:none}
 .hero h1{font-size:clamp(1.6rem,3vw,2.6rem);margin:0 0 .6rem}
 .hero p{margin:0 0 12px;color:rgba(255,255,255,.95)}
 .btn{display:inline-block;background:var(--primary);color:var(--dark);padding:10px 18px;border-radius:8px;font-weight:600;transition:all .2s}
-.btn:hover{background:#e6b800;transform:translateY(-2px)}
+.btn:hover{background:#9C4820;transform:translateY(-2px)}
 
 .page-header{max-width:var(--max-width);margin:12px auto;padding:18px;border-radius:12px;text-align:center;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.02))}
 .page-header h2{margin:0;color:#111}
@@ -174,8 +174,8 @@ hr{border:none;height:2px;width:60%;margin:2rem auto;background:linear-gradient(
 .reveal.in-view{opacity:1;transform:none}
 
 /* Lightbox */
-#lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,18,0.88);z-index:1600}
-#lightbox img{max-width:92%;max-height:86%;border-radius:8px;box-shadow:0 28px 80px rgba(2,6,18,0.9)}
+#lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(18,28,22,0.88);z-index:1600}
+#lightbox img{max-width:92%;max-height:86%;border-radius:8px;box-shadow:0 28px 80px rgba(18,28,22,0.9)}
 #lb-close,#lb-next,#lb-prev{position:fixed;background:rgba(255,255,255,0.06);border:0;padding:10px;border-radius:10px;color:var(--light)}
 #lb-close{right:18px;top:18px} #lb-prev{left:18px;top:50%;transform:translateY(-50%)} #lb-next{right:18px;top:50%;transform:translateY(-50%)}
 
@@ -201,19 +201,19 @@ hr{border:none;height:2px;width:60%;margin:2rem auto;background:linear-gradient(
    (kept exactly as provided)
    =========================== */
 :root { /* light re-declaration kept for block clarity (values same as top root) */
-  --primary: #ffcc00;
-  --dark: #1a1a1a;
+  --primary: #BF5B2E;
+  --dark: #1F3D2E;
   --light: #fff;
   --accent: #27ae60;
-  --muted: #6b7280;
+  --muted: #6E8B74;
   --max-width: 1150px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; background: #f8f9fa; color: #222; line-height: 1.7; }
+body { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; background: #FAF3E7; color: #222; line-height: 1.7; }
 a { text-decoration: none; color: inherit; }
 
 /* Navbar */
-.navbar { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); background: rgba(26,26,26,0.92); padding: 1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,.25); border-radius: 0 0 14px 14px; margin: 0 10px; }
+.navbar { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); background: rgba(31,61,46,0.92); padding: 1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,.25); border-radius: 0 0 14px 14px; margin: 0 10px; }
 .nav-menu { max-width: var(--max-width); margin: 0 auto; display: flex; justify-content: center; gap: 28px; list-style: none; }
 .nav-menu a { color: var(--light); font-weight: 600; padding: 8px 14px; border-radius: 8px; position: relative; transition: all .3s; }
 .nav-menu a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 3px; background: var(--primary); border-radius: 2px; transition: width .25s; }
@@ -236,7 +236,7 @@ a { text-decoration: none; color: inherit; }
 .container li::before { content: '✔'; color: var(--accent); margin-right: 8px; }
 
 /* Divider */
-hr { border: none; height: 2px; width: 60%; margin: 2rem auto; background: linear-gradient(to right, transparent, #ffcc00, transparent); border-radius: 2px; }
+hr { border: none; height: 2px; width: 60%; margin: 2rem auto; background: linear-gradient(to right, transparent, #BF5B2E, transparent); border-radius: 2px; }
 
 /* Footer */
 footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(--dark); color: var(--light); }
@@ -255,13 +255,11 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 }
 
 .contact-panel {
-  background: rgba(17,17,17,0.65); /* slightly more opaque */
-  border: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(12px) saturate(120%);
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
   border-radius: 16px;
   padding: 30px 25px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -270,7 +268,7 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 .contact-panel h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--dark);
   margin-bottom: 20px;
 }
 
@@ -278,7 +276,7 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
   display: block;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #ddd;
+  color: #444;
 }
 
 .contact-panel input,
@@ -286,9 +284,9 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
   width: 100%;
   padding: 14px 16px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  color: #fff;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #FAF6EC;
+  color: #222;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -297,8 +295,8 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 .contact-panel textarea:focus {
   outline: none;
   border-color: var(--primary);
-  background: rgba(255,204,0,0.08);
-  box-shadow: 0 6px 20px rgba(255,204,0,0.25);
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(184,144,90,0.2);
 }
 
 .contact-panel textarea {
@@ -316,7 +314,7 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 .actions button {
   padding: 14px 0;
   background: var(--primary);
-  color: #1a1a1a;
+  color: #fff;
   font-weight: 600;
   border: none;
   border-radius: 12px;
@@ -326,14 +324,14 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 }
 
 .actions button:hover {
-  background: #e6b800;
+  background: #9C4820;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .note {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.85);
+  color: #777;
   text-align: left;
 }
 
@@ -341,7 +339,7 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
 .contact-info {
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--light);
+  color: #444;
 }
 
 .contact-info a {
@@ -355,7 +353,7 @@ footer { margin-top: 2rem; text-align: center; padding: 1.2rem; background: var(
    (kept exactly as provided)
    =========================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #f8f9fa; color: #222; line-height: 1.6; }
+html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #FAF3E7; color: #222; line-height: 1.6; }
 
 a { text-decoration: none; color: inherit; }
 
@@ -363,7 +361,7 @@ a { text-decoration: none; color: inherit; }
 .navbar {
   position: sticky; top: 0; z-index: 120;
   backdrop-filter: blur(12px);
-  background: rgba(26,26,26,0.92);
+  background: rgba(31,61,46,0.92);
   padding: .9rem 0;
   box-shadow: 0 4px 20px rgba(0,0,0,.25);
   border-radius: 0 0 14px 14px;
@@ -407,7 +405,7 @@ a { text-decoration: none; color: inherit; }
   padding: 24px;
   text-align: center;
 }
-.page-header h1 { font-size: clamp(1.8rem,3vw,2.8rem); color: #1a1a1a; margin-bottom: 12px; }
+.page-header h1 { font-size: clamp(1.8rem,3vw,2.8rem); color: #1F3D2E; margin-bottom: 12px; }
 .page-header p { color: var(--muted); max-width: 900px; margin: auto; }
 
 /* NEWS GRID */
@@ -422,7 +420,7 @@ a { text-decoration: none; color: inherit; }
 
 .news-item {
   position: relative;
-  background: var(--card-bg, #f8f9fa);
+  background: var(--card-bg, #FAF3E7);
   border-radius: 14px;
   box-shadow: var(--card-shadow, 0 8px 20px rgba(0,0,0,0.15));
   overflow: hidden;
@@ -460,7 +458,7 @@ a { text-decoration: none; color: inherit; }
 .news-item h2 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #1a1a1a;
+  color: #1F3D2E;
 }
 .news-item p {
   font-size: 0.95rem;
@@ -487,12 +485,12 @@ footer {
    (kept exactly as provided)
    =========================== */
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-body{background:#f8f9fa;color:#222;line-height:1.6;}
+body{background:#FAF3E7;color:#222;line-height:1.6;}
 a{text-decoration:none;color:inherit;}
 ul{list-style:none;}
 
 /* NAVBAR */
-.navbar{position:sticky;top:0;background:rgba(26,26,26,0.92);backdrop-filter:blur(12px);z-index:100;padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;}
+.navbar{position:sticky;top:0;background:rgba(31,61,46,0.92);backdrop-filter:blur(12px);z-index:100;padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;}
 .nav-menu{display:flex;justify-content:center;gap:20px;max-width:var(--max-width);margin:0 auto;padding:0;}
 .nav-menu a{color:var(--light);font-weight:600;padding:8px 14px;border-radius:8px;position:relative;}
 .nav-menu a.active::after,.nav-menu a:hover::after{width:100%;}
@@ -519,7 +517,7 @@ ul{list-style:none;}
 .service-video iframe{width:100%;border-radius:14px;box-shadow:var(--card-shadow);}
 
 /* FOOTER */
-footer{background:#1a1a1a;color:#fff;text-align:center;padding:15px;margin-top:50px;font-size:.9rem;border-radius:14px 14px 0 0;}
+footer{background:#1F3D2E;color:#fff;text-align:center;padding:15px;margin-top:50px;font-size:.9rem;border-radius:14px 14px 0 0;}
 
 /* ANIMATION */
 @keyframes fadeInUp{to{opacity:1;transform:translateY(0);}}
@@ -558,25 +556,13 @@ footer{background:#1a1a1a;color:#fff;text-align:center;padding:15px;margin-top:5
 /* Small safeguard: if any card used a different heading selector */
 .property-card .content * { color: var(--primary) !important; }
 .news-item .content * { color: var(--primary) !important; }
-/* Force background image for Contact Page */
+/* Contact page now matches the rest of the site (no background image) */
 body.contact-page {
-  min-height: 100vh !important;
-  background: url("https://picsum.photos/1920/1080?blur=2") center/cover no-repeat fixed !important;
-  background-color: #111; /* fallback */
+  background: #FAF3E7;
 }
 
-/* Make form panel semi-transparent instead of solid gray */
-.contact-panel {
-  background: rgba(17, 17, 17, 0.65) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff;
-}
-
-/* Keep footer transparent so background shows */
 body.contact-page footer {
-  background: transparent !important;
+  background: #1F3D2E;
   color: #fff;
 }
 
@@ -729,12 +715,12 @@ body.contact-page footer {
    GLOBAL VARIABLES
    =========================== */
 :root{
-  --primary:#ffcc00;
-  --dark:#1a1a1a;
+  --primary:#BF5B2E;
+  --dark:#1F3D2E;
   --light:#fff;
-  --muted:#6b7280;
+  --muted:#6E8B74;
   --max-width:1150px;
-  --card-bg:#0f172a;
+  --card-bg:#173225;
   --card-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
@@ -742,11 +728,11 @@ body.contact-page footer {
    HOME PAGE CSS
    =========================== */
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#f8f9fa;color:#222;line-height:1.6}
+body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#FAF3E7;color:#222;line-height:1.6}
 a{color:inherit;text-decoration:none}
 
 /* Navbar */
-.navbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(26,26,26,0.92);padding:1rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px}
+.navbar{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(31,61,46,0.92);padding:1rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;margin:0 10px}
 .nav-menu{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:center;gap:28px;list-style:none}
 .nav-menu a{color:var(--light);font-weight:600;padding:8px 14px;border-radius:8px;position:relative}
 .nav-menu a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:3px;background:var(--primary);border-radius:2px;transition:width .25s}
@@ -762,7 +748,7 @@ a{color:inherit;text-decoration:none}
 .hero h1{font-size:clamp(1.6rem,3vw,2.6rem);margin:0 0 .6rem}
 .hero p{margin:0 0 12px;color:rgba(255,255,255,.95)}
 .btn{display:inline-block;background:var(--primary);color:var(--dark);padding:10px 18px;border-radius:8px;font-weight:600;transition:all .2s}
-.btn:hover{background:#e6b800;transform:translateY(-2px)}
+.btn:hover{background:#9C4820;transform:translateY(-2px)}
 
 /* Other Home page styling remains as provided ... */
 
@@ -780,12 +766,12 @@ a{color:inherit;text-decoration:none}
    NEWS PAGE CSS
    =========================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #f8f9fa; color: #222; line-height: 1.6; }
+html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #FAF3E7; color: #222; line-height: 1.6; }
 
 a { text-decoration: none; color: inherit; }
 
 /* NAVBAR */
-.navbar { position: sticky; top: 0; z-index: 120; backdrop-filter: blur(12px); background: rgba(26,26,26,0.92); padding: .9rem 0; box-shadow: 0 4px 20px rgba(0,0,0,.25); border-radius: 0 0 14px 14px; margin: 0 10px 20px; }
+.navbar { position: sticky; top: 0; z-index: 120; backdrop-filter: blur(12px); background: rgba(31,61,46,0.92); padding: .9rem 0; box-shadow: 0 4px 20px rgba(0,0,0,.25); border-radius: 0 0 14px 14px; margin: 0 10px 20px; }
 .nav-menu { max-width: var(--max-width); margin: 0 auto; display: flex; gap: 22px; list-style: none; padding: 6px 18px; justify-content: center; align-items: center; }
 .nav-menu a { color: var(--light); font-weight: 600; padding: 8px 14px; border-radius: 8px; position: relative; }
 .nav-menu a::after { content: ''; position: absolute; left: 0; bottom: -6px; height: 3px; width: 0; background: var(--primary); border-radius: 3px; transition: width .28s; }
@@ -822,7 +808,7 @@ a { text-decoration: none; color: inherit; }
 
 /* PAGE HEADER */
 .page-header { max-width: var(--max-width); margin: 18px auto; padding: 24px; text-align: center; }
-.page-header h1 { font-size: clamp(1.8rem,3vw,2.8rem); color: #1a1a1a; margin-bottom: 12px; }
+.page-header h1 { font-size: clamp(1.8rem,3vw,2.8rem); color: #1F3D2E; margin-bottom: 12px; }
 .page-header p { color: var(--muted); max-width: 900px; margin: auto; }
 
 /* NEWS GRID and items remain as provided ... */
@@ -886,12 +872,12 @@ a { text-decoration: none; color: inherit; }
    GLOBAL VARIABLES
    =========================== */
 :root{
-  --primary:#ffcc00; 
-  --dark:#1a1a1a;
+  --primary:#BF5B2E; 
+  --dark:#1F3D2E;
   --light:#fff;
-  --muted:#6b7280;
+  --muted:#6E8B74;
   --max-width:1150px;
-  --card-bg:#0f172a;
+  --card-bg:#173225;
   --card-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
@@ -914,14 +900,14 @@ a { text-decoration: none; color: inherit; }
    NEWS PAGE CSS
    =========================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #f8f9fa; color: #222; line-height: 1.6; }
+html, body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100%; background: #FAF3E7; color: #222; line-height: 1.6; }
 a { text-decoration: none; color: inherit; }
 
 /* NAVBAR */
 .navbar {
   position: sticky; top: 0; z-index: 120;
   backdrop-filter: blur(12px);
-  background: rgba(26,26,26,0.92);
+  background: rgba(31,61,46,0.92);
   padding: .9rem 0;
   box-shadow: 0 4px 20px rgba(0,0,0,.25);
   border-radius: 0 0 14px 14px;
@@ -984,7 +970,7 @@ a { text-decoration: none; color: inherit; }
 }
 .news-item {
   position: relative;
-  background: var(--card-bg, #f8f9fa);
+  background: var(--card-bg, #FAF3E7);
   border-radius: 14px;
   box-shadow: var(--card-shadow, 0 8px 20px rgba(0,0,0,0.15));
   overflow: hidden;
@@ -1042,11 +1028,11 @@ footer {
    SERVICES PAGE CSS
    =========================== */
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-body{background:#f8f9fa;color:#222;line-height:1.6;}
+body{background:#FAF3E7;color:#222;line-height:1.6;}
 a{text-decoration:none;color:inherit;}
 ul{list-style:none;}
 /* NAVBAR */
-.navbar{position:sticky;top:0;background:rgba(26,26,26,0.92);backdrop-filter:blur(12px);z-index:100;padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;}
+.navbar{position:sticky;top:0;background:rgba(31,61,46,0.92);backdrop-filter:blur(12px);z-index:100;padding:.9rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25);border-radius:0 0 14px 14px;}
 .nav-menu{display:flex;justify-content:center;gap:20px;max-width:var(--max-width);margin:0 auto;padding:0;}
 .nav-menu a{color:var(--light);font-weight:600;padding:8px 14px;border-radius:8px;position:relative;}
 .nav-menu a.active::after,.nav-menu a:hover::after{width:100%;}
@@ -1075,7 +1061,7 @@ ul{list-style:none;}
 .service-text p{font-size:1rem;color:#ddd;line-height:1.5;}
 .service-video{max-width:600px;margin:50px auto;text-align:center;}
 .service-video iframe{width:100%;border-radius:14px;box-shadow:var(--card-shadow);}
-footer{background:#1a1a1a;color:#fff;text-align:center;padding:15px;margin-top:50px;font-size:.9rem;border-radius:14px 14px 0 0;}
+footer{background:#1F3D2E;color:#fff;text-align:center;padding:15px;margin-top:50px;font-size:.9rem;border-radius:14px 14px 0 0;}
 @keyframes fadeInUp{to{opacity:1;transform:translateY(0);}}
 /* Make images and videos scale */
 img, video, iframe {
