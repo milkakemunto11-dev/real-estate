@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Prime Estates</title>
+  <title>Contact - Nyumbani Homes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="contact-page">
@@ -23,13 +23,12 @@
   <!-- Page container -->
   <div class="page-wrap">
 
-    <!-- Glass panel containing the form + info -->
     <div class="contact-panel" role="region" aria-label="Contact panel">
 
       <h2>Get in Touch</h2>
-      <p class="lead" style="color:#ddd;margin-top:-10px;margin-bottom:6px;">Looking to buy, sell, rent or invest? Send us a message and one of our agents will reply within 1–2 business days.</p>
+      <p class="lead" style="color:#666;margin-top:-10px;margin-bottom:6px;">Looking to buy, sell, rent or invest? Send us a message and one of our agents will reply within 1–2 business days.</p>
 
-      <form class="contact-form" action="#" method="post" autocomplete="on" novalidate>
+      <form id="contactForm" class="contact-form" autocomplete="on" novalidate>
         <div>
           <label for="fname">Full Name</label>
           <input id="fname" name="fullname" type="text" placeholder="Your full name" required>
@@ -56,14 +55,14 @@
         </div>
 
         <div class="actions">
-          <div class="note">We respect your privacy — your details are never shared.</div>
-          <button class="btn" type="submit">Send Message</button>
+          <div class="note" id="formNote">We respect your privacy — your details are never shared.</div>
+          <button class="btn" type="submit" id="submitBtn">Send Message</button>
         </div>
       </form>
 
       <div class="contact-info">
         <h3 style="margin-top:1.5rem;">How to Reach Us</h3>
-        <p>Email: <a href="mailto:info@primeestates.co.ke">info@primeestates.co.ke</a></p>
+        <p>Email: <a href="mailto:info@nyumbanihomes.co.ke">info@nyumbanihomes.co.ke</a></p>
         <p>Phone: <a href="tel:+254719719178">+254 719 719 178</a></p>
         <p>Office Hours: Mon–Fri, 9:00 — 18:00</p>
         <p>Office: Westlands, Nairobi, Kenya</p>
@@ -75,8 +74,59 @@
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Prime Estates | Designed with HTML &amp; CSS
+    &copy; 2026 Nyumbani Homes | Designed with HTML &amp; CSS
   </footer>
+
+  <!-- Supabase client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // ⚠️ Replace these two values with your own Supabase project's URL and anon/public key.
+    // Find them in your Supabase dashboard under Project Settings → API.
+    const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
+    const SUPABASE_ANON_KEY = "YOUR-ANON-PUBLIC-KEY";
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    const form = document.getElementById("contactForm");
+    const note = document.getElementById("formNote");
+    const submitBtn = document.getElementById("submitBtn");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const payload = {
+        full_name: document.getElementById("fname").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        interest: document.getElementById("interest").value.trim(),
+        message: document.getElementById("message").value.trim(),
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending…";
+      note.style.color = "#777";
+      note.textContent = "Sending your message…";
+
+      try {
+        const { error } = await supabaseClient
+          .from("contact_messages")
+          .insert([payload]);
+
+        if (error) throw error;
+
+        note.style.color = "#1F7A3D";
+        note.textContent = "Thank you! Your message has been sent — we'll be in touch soon.";
+        form.reset();
+      } catch (err) {
+        console.error(err);
+        note.style.color = "#B3261E";
+        note.textContent = "Something went wrong sending your message. Please try again or reach us directly.";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Message";
+      }
+    });
+  </script>
 
 </body>
 </html>
